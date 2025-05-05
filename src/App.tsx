@@ -7,8 +7,7 @@ import { RideState, Scooter } from './types';
 import { toast } from 'sonner';
 
 
-const baseUrl = `http://${import.meta.env.APP_SERVER_IP}:${import.meta.env.APP_PORT}`;
-
+const baseUrl = `http://${import.meta.env.VITE_APP_ENDPOINT}`;
 
 async function validateAlcohol(scooter: Scooter, setRideState: (state: RideState) => void) {
   console.log("validating alcohol running")
